@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Cleartext is needed for the LAN peer.  This is not an egress policy: the app
+     itself only ever connects to the peer endpoint it was started with (Peer.java). -->
+<network-security-config>
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>
